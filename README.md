@@ -2,6 +2,12 @@
 
 Small MuJoCo-to-real demo for a cardboard two-wheel rover.
 
+## Demo Video
+
+[![MuJoCo sim and real cardboard rover executing the same plan side by side](docs/rover_sim_real_side_by_side.jpg)](docs/rover_sim_real_side_by_side.mp4)
+
+Click the screenshot above to view the side-by-side video.
+
 The demo calibrates two primitive motions from the real rover:
 
 - straight-line speed over a 49 inch / 1.245 m lane
