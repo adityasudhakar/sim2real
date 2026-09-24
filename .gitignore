@@ -1,0 +1,7 @@
+.venv/
+.venv312/
+__pycache__/
+*.pyc
+*.mov
+real_rover.*
+rover_sim_real.mp4

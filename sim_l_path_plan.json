@@ -1,0 +1,44 @@
+{
+  "source": "mujoco",
+  "model": "/Users/hellouser/toy-cleaner/sim/toy_cleaner_sandbox.xml",
+  "search": {
+    "candidates_evaluated": 151,
+    "planner": "Python grid search over MuJoCo rollouts",
+    "score": "position_error_m + 0.02 * yaw_error_deg",
+    "shared_forward_time": true
+  },
+  "goal": {
+    "description": "Drive forward, turn right 90 degrees, then drive forward.",
+    "first_forward_m": 0.6,
+    "turn_deg": -90.0,
+    "second_forward_m": 0.6,
+    "target_xy_m": [
+      0.6,
+      0.6
+    ],
+    "target_yaw_deg": -90.0
+  },
+  "plan": [
+    {
+      "command": "forward",
+      "seconds": 1.66
+    },
+    {
+      "command": "turn_right",
+      "seconds": 1.04
+    },
+    {
+      "command": "forward",
+      "seconds": 1.66
+    }
+  ],
+  "sim_predicted_end": {
+    "xy_m": [
+      0.6221,
+      0.5571
+    ],
+    "yaw_deg": -90.47,
+    "pos_error_m": 0.0482,
+    "yaw_error_deg": 0.47
+  }
+}
